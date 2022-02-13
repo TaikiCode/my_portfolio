@@ -4,6 +4,7 @@ import './App.css';
 import AboutMe from './components/aboutMe/AboutMe';
 import Experiences from './components/experiences/Experiences';
 import Skills from './components/skills/Skills';
+import Portfolio from './components/portfolio/Portfolio';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <AboutMe />
       <Experiences />
       <Skills />
+      <Portfolio />
     </>
   );
 }

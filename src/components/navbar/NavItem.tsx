@@ -14,7 +14,7 @@ const NavItem: VFC<Props> = ({ toPath, offset, active, children }) => {
       <Link
         className="nav-link"
         href="#"
-        smooth={true}
+        // smooth={true}
         to={toPath}
         offset={offset}
       >

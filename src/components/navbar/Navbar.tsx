@@ -41,7 +41,7 @@ const Navbar: VFC = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <MenuIcon className="white" />
+          j<MenuIcon className="white" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto">
