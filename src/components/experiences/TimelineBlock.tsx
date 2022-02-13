@@ -4,14 +4,14 @@ interface Props {
   position: "right" | "left"
   topicText: string
   season: string
-  experienceText: string
+  expText: string
 }
 
 const TimelineBlock: VFC<Props> = ({
   position,
   topicText,
   season,
-  experienceText,
+  expText,
 }) => {
   return (
     <div className={`timeline-block timeline-block-${position}`}>
@@ -19,7 +19,7 @@ const TimelineBlock: VFC<Props> = ({
       <div className="timeline-content">
         <h3 className="topic">{topicText}</h3>
         <p className="font-italic">{season}</p>
-        <p className="experience-text">{experienceText}</p>
+        <p className="experience-text">{expText}</p>
       </div>
     </div>
   )
