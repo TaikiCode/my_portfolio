@@ -1,0 +1,12 @@
+@import "../../App.scss";
+.nav {
+  @apply navbar mb-2 shadow bg-transparent fixed z-50;
+  &.active {
+    background-color: var(--primary-transparent-black);
+  }
+}
+
+.navItem {
+  color: var(--primary-grey) !important;
+  @apply btn btn-ghost btn-md rounded-btn tracking-widest;
+}

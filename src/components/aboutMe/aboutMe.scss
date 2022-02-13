@@ -1,0 +1,25 @@
+/************************ ABOUTME *********************************/
+
+#about {
+  padding: 7rem 1rem;
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about-me {
+  line-height: 2rem;
+}
+
+@media (max-width: 468px) {
+  .about-heading {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .about-me {
+    padding: 0 1rem;
+  }
+}
