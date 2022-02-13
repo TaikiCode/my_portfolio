@@ -1,14 +1,8 @@
 import { VFC } from "react"
 import Typed from "react-typed"
+import { HEADER_TEXT, TYPE_CONTENTS } from "../../contents/header"
 
 const Header: VFC = () => {
-  const HEADER_TEXT = "Taiki Okura"
-  const TYPE_CONTENTS = [
-    "Web Design.",
-    "Web Development.",
-    "Artificial Intelligence.",
-    "Data science.",
-  ]
   return (
     <div id="home" className="header-wrapper">
       <div className="main-info">
