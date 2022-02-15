@@ -43,39 +43,6 @@ body {
   color: var(--primary-white) !important;
 } */
 
-/************************ PORTFOLIO *********************************/
-
-.portfolio-wrapper {
-  background-color: #262626;
-  padding: 3rem 0;
-}
-
-.portfolio-wrapper h1 {
-  color: var(--primary-orange);
-}
-
-.portfolio-wrapper .card {
-  background-color: transparent;
-  filter: grayscale(100%);
-  cursor: pointer;
-}
-
-.portfolio-wrapper .card:hover {
-  background-color: var(--primary-orange);
-  filter: grayscale(0);
-  filter: drop-shadow(0 0 0.5rem rgba(255, 203, 5, 1));
-  transition-duration: 0.5s;
-}
-
-.portfolio-image {
-  width: 100%;
-}
-
-.portfolio-image-box {
-  position: relative;
-  margin: 1rem;
-}
-
 /************************ POPUP *********************************/
 
 .portfolio-image-popupbox {
