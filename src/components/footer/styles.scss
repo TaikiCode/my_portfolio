@@ -1,0 +1,17 @@
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+  @apply w-screen flex flex-col justify-center items-center;
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: var(--primary-dark-grey);
+    &:hover {
+      text-decoration: none;
+      color: var(--primary-orange);
+      cursor: pointer;
+    }
+  }
+}

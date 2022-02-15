@@ -43,65 +43,6 @@ body {
   color: var(--primary-white) !important;
 } */
 
-/************************ POPUP *********************************/
-
-.portfolio-image-popupbox {
-  width: 100%;
-}
-
-.popup-topic {
-  font-size: 1.2rem;
-  font-family: italic !important;
-}
-.portfolio-wrapper p {
-  font-size: 0.9rem;
-}
-
-.hyper-link {
-  cursor: pointer;
-  color: var(--primary-orange) !important;
-}
-
-.hyper-link:hover {
-  color: var(--primary-red) !important;
-}
-
-/*------------ MEDIA ------------------*/
-@media (max-width: 960px) {
-  .portfolio-wrapper .card {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio-wrapper .card {
-    margin-bottom: 2rem;
-  }
-  .portfolio-image-popupbox {
-    width: 100%;
-  }
-}
-
-@media (max-height: 570px) {
-  .popupbox-wrapper {
-    height: 100%;
-  }
-  .portfolio-image-popupbox {
-    width: 50%;
-  }
-}
-
-@media (max-height: 280px) {
-  .popupbox-wrapper {
-    height: 90%;
-  }
-  .portfolio-image-popupbox {
-    width: 30%;
-  }
-}
-
 /************************ CONTACTS COMPONENT *********************************/
 .contacts {
   background-color: #222222;
@@ -216,28 +157,4 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4rem;
   }
-}
-
-/************************ FOOTER COMPONENT *********************************/
-.footer {
-  background: var(--primary-black);
-  color: var(--primary-dark-grey);
-  padding: 3rem;
-}
-
-.footer a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 0 1rem;
-  color: var(--primary-dark-grey);
-}
-
-.footer a:hover {
-  text-decoration: none;
-  color: var(--primary-orange);
-  cursor: pointer;
-}
-
-.footer p {
-  margin-bottom: 0;
 }
