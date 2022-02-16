@@ -6,8 +6,8 @@ import "./skills.scss"
 const Skills: VFC = () => {
   return (
     <div id="skills" className="skills-wrapper lg:py-24  md:py-20 py-12">
-        <h1 className="uppercase text-center pb-12 text-4xl">My Skills</h1>
-        <div className="flexRowCenter mb-4 pb-5">
+        <h1 className="uppercase text-center pb-14 text-4xl">My Skills</h1>
+        <div className="flexRowCenter mb-2 pb-1">
           <div className="column lg:w-1/3 md:w-2/3 w-5/6">
             {SKILL_CONTENTS.map((skill, index) => (
               <Bar
