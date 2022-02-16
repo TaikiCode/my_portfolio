@@ -60,10 +60,10 @@ const Contacts = () => {
         >
           <div className="flex flex-col lg:w-1/2 lg:px-10 w-4/5">
             {/* NAME INPUT */}
-            <div className="form-control">
+            <div className="form-control mb-2">
               <input
                 type="text"
-                className="input font-mono pt-2"
+                className="input font-mono"
                 placeholder="お名前"
                 name="name"
                 ref={register({
@@ -79,10 +79,10 @@ const Contacts = () => {
               {errors.name && errors.name.message}
             </span>
             {/* EMAIL INPUT */}
-            <div className="text-center form-control">
+            <div className="form-control mb-2">
               <input
                 type="email"
-                className="input font-mono pt-2"
+                className="input font-mono"
                 placeholder="メールアドレス"
                 name="email"
                 ref={register({
@@ -98,10 +98,10 @@ const Contacts = () => {
               {errors.email && errors.email.message}
             </span>
             {/* SUBJECT INPUT */}
-            <div className="form-control">
+            <div className="form-control mb-2">
               <input
                 type="text"
-                className="input font-mono pt-2"
+                className="input font-mono"
                 placeholder="主題"
                 name="subject"
                 ref={register({
@@ -113,11 +113,11 @@ const Contacts = () => {
               {errors.subject && errors.subject.message}
             </span>
           </div>
-          <div className="flex flex-col lg:w-1/2 pt-5 lg:p-5 w-4/5">
+          <div className="flex flex-col lg:w-1/2 pt-6 lg:p-5 lg:mt-10 w-4/5">
             {/* DESCRIPTION */}
             <div className="form-control">
               <textarea
-                className="h-40 input font-mono"
+                className="h-48 input font-mono pt-8"
                 placeholder="お問い合わせ内容"
                 name="description"
                 ref={register({

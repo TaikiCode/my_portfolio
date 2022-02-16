@@ -13,8 +13,8 @@ const AboutMe: VFC = () => {
           </div>
         </div>
         <div className="h-1/2 lg:w-1/2 md:w-2/3 pt-12">
-          <h1 className="about-heading">about me</h1>
-          <p className="about-me font-italic">{ABOUT_ME}</p>
+          <h1 className="title">about me</h1>
+          <p className="leading-loose font-italic px-3 lg:px-0">{ABOUT_ME}</p>
         </div>
       </div>
     </div>
