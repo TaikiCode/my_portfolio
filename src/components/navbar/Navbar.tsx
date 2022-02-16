@@ -29,7 +29,7 @@ const Navbar: VFC = () => {
     <div className={`nav ${!isHeightOver && "active"}`}>
       <div className="hidden px-2 mx-2 w-full lg:flex lg:justify-center lg:items-center">
         <div className="flex items-stretch">
-          {NAV_ITEMS.map((item, index) => <NavItem text={item.text} toPath={item.toPath} offset={item.offset} isHeightOver={isHeightOver}/>)}
+          {NAV_ITEMS.map((item, index) => <NavItem key={index} text={item.text} toPath={item.toPath} offset={item.offset} isHeightOver={isHeightOver}/>)}
         </div>
       </div>
     </div>

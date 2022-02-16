@@ -7,26 +7,26 @@ export const NAV_ITEMS = [
     {
         text: "About me",
         toPath: "about",
-        offset: -100,
+        offset: -77,
     },
     {
         text: "Experience",
         toPath: "experience",
-        offset: -77,
+        offset: -65,
     },
     {
         text: "My Skills",
         toPath: "skills",
-        offset: -75,
+        offset: -63,
     },
     {
         text: "Portfolio",
         toPath: "portfolio",
-        offset: -75,
+        offset: -65,
     },
     {
         text: "Contacts",
         toPath: "contacts",
-        offset: -75,
+        offset: -65,
     },
 ]
