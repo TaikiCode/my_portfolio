@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { useForm } from "react-hook-form"
 import emailjs from "emailjs-com"
 import "./styles.scss"
+import InputForm from "./InputForm"
 
 const Contacts = () => {
   const [successMessage, setSuccessMessage] = useState<string>("")
@@ -60,58 +61,43 @@ const Contacts = () => {
         >
           <div className="flex flex-col lg:w-1/2 lg:px-10 w-4/5">
             {/* NAME INPUT */}
-            <div className="form-control mb-2">
-              <input
-                type="text"
-                className="input font-mono"
-                placeholder="お名前"
-                name="name"
-                ref={register({
-                  required: "名前を入力してください",
-                  maxLength: {
-                    value: 20,
-                    message: "20文字以内で入力してください。",
-                  },
-                })}
-              />
-            </div>
-            <span className="error-message">
-              {errors.name && errors.name.message}
-            </span>
+            <InputForm
+              ref={register({
+                required: "名前を入力してください",
+                maxLength: {
+                  value: 20,
+                  message: "20文字以内で入力してください。",
+                },
+              })}
+              type="text"
+              placeholder="お名前"
+              name="name"
+              errorMessage={errors.name && errors.name.message}
+            />
             {/* EMAIL INPUT */}
-            <div className="form-control mb-2">
-              <input
-                type="email"
-                className="input font-mono"
-                placeholder="メールアドレス"
-                name="email"
-                ref={register({
-                  required: "メールアドレスを入力してください。",
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "それは無効のメールアドレスです。",
-                  },
-                })}
-              />
-            </div>
-            <span className="error-message">
-              {errors.email && errors.email.message}
-            </span>
+            <InputForm
+              ref={register({
+                required: "メールアドレスを入力してください。",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "それは無効のメールアドレスです。",
+                },
+              })}
+              type="email"
+              placeholder="メールアドレス"
+              name="email"
+              errorMessage={errors.email && errors.email.message}
+            />
             {/* SUBJECT INPUT */}
-            <div className="form-control mb-2">
-              <input
-                type="text"
-                className="input font-mono"
-                placeholder="主題"
-                name="subject"
-                ref={register({
-                  required: "主題を入力してください。",
-                })}
-              />
-            </div>
-            <span className="error-message">
-              {errors.subject && errors.subject.message}
-            </span>
+            <InputForm
+              ref={register({
+                required: "主題を入力してください。",
+              })}
+              type="text"
+              placeholder="主題"
+              name="subject"
+              errorMessage={errors.subject && errors.subject.message}
+            />
           </div>
           <div className="flex flex-col lg:w-1/2 pt-6 lg:p-5 lg:mt-10 w-4/5">
             {/* DESCRIPTION */}
@@ -123,7 +109,7 @@ const Contacts = () => {
                 ref={register({
                   required: "お問い合わせ内容を入力してください。",
                 })}
-              ></textarea>
+              />
             </div>
             <span className="error-message">
               {errors.description && errors.description.message}
