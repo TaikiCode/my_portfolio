@@ -17,9 +17,9 @@ const TimelineBlock: VFC<Props> = ({
     <div className={`timeline-block timeline-block-${position}`}>
       <div className="marker"></div>
       <div className="timeline-content">
-        <h3 className="topic">{topicText}</h3>
-        <p className="font-italic">{season}</p>
-        <p className="experience-text">{expText}</p>
+        <h3 className="topic font-bold font-serif text-xl">{topicText}</h3>
+        <p className="font-serif pt-1 pb-3">{season}</p>
+        <p className="pb-3 tracking-wide">{expText}</p>
       </div>
     </div>
   )

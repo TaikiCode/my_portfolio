@@ -1,13 +1,22 @@
 import { VFC, useState, useEffect } from "react"
-import { MenuIcon } from "@heroicons/react/solid"
+import { FiMenu } from "react-icons/fi"
+import { IoCloseSharp } from "react-icons/io5"
+
+
 import NavItem from "./NavItem"
+import "./styles.scss"
+import { NAV_ITEMS } from "../../contents/navItems"
 
 const Navbar: VFC = () => {
   const [isHeightOver, setIsHeightOver] = useState<boolean>(false)
 
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+  const handleOpen = () => setIsMenuOpen(true)
+  const handleClose = () => setIsMenuOpen(false)
+
   useEffect(() => {
     const scrollAction = () => {
-      if (150 > window.scrollY) {
+      if (100 > window.scrollY) {
         setIsHeightOver(true)
       } else {
         setIsHeightOver(false)
@@ -24,49 +33,48 @@ const Navbar: VFC = () => {
   }, [])
 
   return (
-    <nav
-      className={
-        isHeightOver
-          ? "navbar navbar-expand-lg navbar-light fixed-top"
-          : "navbar navbar-expand-lg navbar-light fixed-top active"
-      }
-    >
-      <div className={isHeightOver ? "container my-4" : "container my-2"}>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          j<MenuIcon className="white" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav m-auto">
-            <NavItem toPath="home" offset={-110} active>
-              Home <span className="sr-only">(current)</span>
-            </NavItem>
-            <NavItem toPath="about" offset={-100}>
-              About me
-            </NavItem>
-            <NavItem toPath="experience" offset={-77}>
-              Experience
-            </NavItem>
-            <NavItem toPath="skills" offset={-75}>
-              My Skills
-            </NavItem>
-            <NavItem toPath="portfolio" offset={-75}>
-              Portfolio
-            </NavItem>
-            <NavItem toPath="contacts" offset={-75}>
-              Contacts
-            </NavItem>
-          </ul>
+    <div className={`navStyle ${!isHeightOver && "active"}`}>
+      <div className="px-2 mx-2 w-full lg:flex lg:justify-center lg:items-center">
+        <div className="hidden lg:flex items-stretch">
+          {NAV_ITEMS.map((item, index) => (
+            <NavItem
+              key={index}
+              text={item.text}
+              toPath={item.toPath}
+              offset={item.offset}
+              isHeightOver={isHeightOver}
+            />
+          ))}
+        </div>
+        {/* モバイル用 */}
+        <div className="lg:hidden flex pt-2">
+          {isMenuOpen ? (
+            <>
+              <IoCloseSharp
+                className="text-base-100 text-3xl z-50"
+                onClick={handleClose}
+              />
+              <div className="overlay">
+                {NAV_ITEMS.map((item) => (
+                  <div className="mobileItem">
+                    <NavItem
+                      text={item.text}
+                      toPath={item.toPath}
+                      offset={item.offset}
+                    />
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <FiMenu
+              className="text-base-100 text-3xl z-50"
+              onClick={handleOpen}
+            />
+          )}
         </div>
       </div>
-    </nav>
+    </div>
   )
 }
 

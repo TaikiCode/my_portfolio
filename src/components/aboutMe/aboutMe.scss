@@ -1,0 +1,10 @@
+/************************ ABOUTME *********************************/
+
+#about {
+  padding: 6rem 1rem 5rem 1rem;
+}
+
+.title {
+  color: var(--primary-orange);
+  @apply uppercase text-2xl mb-4 text-center lg:text-left;
+}

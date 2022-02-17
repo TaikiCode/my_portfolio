@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+:root {
+  --primary-white: #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgb(52, 58, 64);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-black: #000000;
+  --primary-transparent-black: rgba(0, 0, 0, 0.7);
+  --primary-green: green;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+/************************ tailwind CSS *********************************/
+
+.flexRowCenter {
+  @apply flex justify-center items-center;
+}
+
+.flexColCenter {
+  @apply flex flex-col justify-center items-center;
+}

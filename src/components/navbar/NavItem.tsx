@@ -1,26 +1,24 @@
-import { ReactNode, VFC } from "react"
+import { VFC } from "react"
 import { Link } from "react-scroll"
 
 interface Props {
+  text: string
   toPath: string
   offset: number
-  active?: boolean
-  children: ReactNode
+  isHeightOver?: boolean
 }
 
-const NavItem: VFC<Props> = ({ toPath, offset, active, children }) => {
+const NavItem: VFC<Props> = ({ text, toPath, offset, isHeightOver }) => {
   return (
-    <li className={active ? "nav-item active" : "nav-item"}>
-      <Link
-        className="nav-link"
-        href="#"
-        // smooth={true}
-        to={toPath}
-        offset={offset}
-      >
-        {children}
-      </Link>
-    </li>
+    <Link
+      className={`navItem ${isHeightOver ? "m-3" : "mx-2"}`}
+      href="#"
+      to={toPath}
+      offset={offset}
+      smooth={true}
+    >
+      {text}
+    </Link>
   )
 }
 

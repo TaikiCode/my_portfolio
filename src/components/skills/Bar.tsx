@@ -8,13 +8,13 @@ interface Props {
 
 const Bar: VFC<Props> = ({title, level, barStyleName}) => {
   return (
-    <div className="bars">
-      <div className="info">
+    <>
+      <div className="flex justify-between items-center pb-1 font-mono text-sm">
         <p>{title}</p>
         <p>{level}</p>
       </div>
-      <div className={`line ${barStyleName}`} />
-    </div>
+      <div className={`line mb-7 ${barStyleName}`} />
+    </>
   )
 }
 

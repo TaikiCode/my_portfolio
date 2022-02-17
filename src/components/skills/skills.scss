@@ -1,0 +1,50 @@
+/************************ SKILLS COMPONENT *********************************/
+
+.skills-wrapper {
+  background: var(--primary-dark);
+  h1 {
+    color: var(--primary-orange);
+  }
+  p {
+    color: var(--primary-light-grey);
+    font-weight: bold;
+  }
+}
+
+.line {
+  height: 1.4rem;
+  width: 100%;
+  background: var(--primary-grey);
+  position: relative;
+  border-radius: 1rem;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+  border-radius: 1rem;
+}
+
+.htmlcss::before {
+  width: 80%;
+}
+
+.js::before {
+  width: 70%;
+}
+
+.react::before {
+  width: 75%;
+}
+
+.python::before {
+  width: 90%;
+}
+
+.django::before {
+  width: 80%;
+}
