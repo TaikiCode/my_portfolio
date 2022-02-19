@@ -4,6 +4,7 @@ import Box from "@mui/material/Box"
 interface Props {
   title: string
   imageUrl: string
+  imageAltUrl: string
   description: string
   skills: string
   github: string
@@ -12,7 +13,7 @@ interface Props {
 
 const CustomBox: VFC<Props> = ({
   title,
-  imageUrl,
+  imageAltUrl,
   description,
   skills,
   github,
@@ -25,7 +26,7 @@ const CustomBox: VFC<Props> = ({
 
       <div className="bodySection">
         <div className="imageWrapper">
-          <img className="w-full rounded-lg" src={imageUrl} alt={title} />
+          <img className="w-full rounded-lg" src={imageAltUrl} alt={title} />
         </div>
 
         <div className="mainSection">

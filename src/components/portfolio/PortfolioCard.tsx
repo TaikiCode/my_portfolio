@@ -6,6 +6,7 @@ import CustomBox from "./CustomBox"
 interface Props {
   title: string
   imageUrl: string
+  imageAltUrl: string
   description: string
   skills: string
   github: string

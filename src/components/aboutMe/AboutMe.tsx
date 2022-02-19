@@ -1,6 +1,7 @@
 import { VFC } from "react"
 import { ABOUT_ME } from "../../contents/aboutMe"
-import me from "../../images/demo.png"
+// import me from "../../images/demo.png"
+import me from "../../images/me2020.jpg"
 import "./aboutMe.scss"
 
 const AboutMe: VFC = () => {
@@ -9,7 +10,9 @@ const AboutMe: VFC = () => {
       <div className="flexColCenter w-full h-full">
         <div className="h-1/2">
           <div className="h-60">
-            <img src={me} alt="author..." className="h-full" />
+            <div className="h-full rounded-lg shadow-lg overflow-hidden">
+              <img src={me} alt="author..." className="h-full" />
+            </div>
           </div>
         </div>
         <div className="h-1/2 lg:w-1/2 md:w-2/3 pt-12">
