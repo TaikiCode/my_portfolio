@@ -31,13 +31,13 @@ const CustomBox: VFC<Props> = ({
 
         <div className="mainSection">
           <div className="description">
-            <h1 className="h-1/4 text-xl">説明</h1>
-            <div className="h-3/4 text-sm">{description}</div>
+            <h1 className="h-1/5 lg:h-1/4 text-mg lg:text-xl">説明</h1>
+            <div className="h-4/5 lg:h-3/4 text-xs lg:text-sm">{description}</div>
           </div>
 
           <div className="skills">
-            <h1 className="h-1/4 text-lg pt-3">使用技術</h1>
-            <div className="h-3/4 flexRowCenter text-sm font-serif">
+            <h1 className="h-1/5 lg:h-1/4 text-mg lg:text-lg pt-3">使用技術</h1>
+            <div className="h-4/5 lg:h-3/4 flexRowCenter text-sm font-serif">
               {skills}
             </div>
           </div>
@@ -47,9 +47,9 @@ const CustomBox: VFC<Props> = ({
               <div className="pr-5 font-mono text-sm">Github: </div>
               <a onClick={() => handleOpenWindow(github)}>{github}</a>
             </div>
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row items-center">
               <div className="pr-5 font-mono text-sm">Demo: </div>
-              <a onClick={() => handleOpenWindow(demo)}>{demo}</a>
+              {demo ? <a onClick={() => handleOpenWindow(demo)}>{demo}</a> : <p className="font-serif italic">Coming Soon...</p>}
             </div>
           </div>
         </div>
