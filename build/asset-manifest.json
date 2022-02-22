@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6199b3a.css",
-    "main.js": "/static/js/main.a7f28d70.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/sns.png": "/static/media/sns.53618d818ab4d4c515c2.png",
-    "static/media/gallery.png": "/static/media/gallery.9f578754edd921d318fc.png",
-    "static/media/me2020.jpg": "/static/media/me2020.a4884c58c1aeac9fe494.jpg",
-    "static/media/p4p01.png": "/static/media/p4p01.0b5f5a8300072a372aa5.png",
-    "static/media/p4p02.png": "/static/media/p4p02.4d152928c5ce7497b449.png",
-    "static/media/top.jpg": "/static/media/top.a54fc45d6df42e73178c.jpg",
-    "static/media/bj01.png": "/static/media/bj01.4d01e43d155b1eb29195.png",
-    "static/media/coin-tracker.png": "/static/media/coin-tracker.dd127308431a5bb4a10e.png",
-    "static/media/bj02.png": "/static/media/bj02.d2752cc864ece297e758.png",
-    "static/media/typing-game.png": "/static/media/typing-game.e7d7cc92a30641f3bd1d.png",
-    "index.html": "/index.html",
-    "main.d6199b3a.css.map": "/static/css/main.d6199b3a.css.map",
-    "main.a7f28d70.js.map": "/static/js/main.a7f28d70.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/my_portfolio/static/css/main.0a6b2267.css",
+    "main.js": "/my_portfolio/static/js/main.04168618.js",
+    "static/js/787.1ed0c42c.chunk.js": "/my_portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/sns.png": "/my_portfolio/static/media/sns.53618d818ab4d4c515c2.png",
+    "static/media/gallery.png": "/my_portfolio/static/media/gallery.9f578754edd921d318fc.png",
+    "static/media/me2020.jpg": "/my_portfolio/static/media/me2020.a4884c58c1aeac9fe494.jpg",
+    "static/media/p4p01.png": "/my_portfolio/static/media/p4p01.0b5f5a8300072a372aa5.png",
+    "static/media/p4p02.png": "/my_portfolio/static/media/p4p02.4d152928c5ce7497b449.png",
+    "static/media/top.jpg": "/my_portfolio/static/media/top.a54fc45d6df42e73178c.jpg",
+    "static/media/bj01.png": "/my_portfolio/static/media/bj01.4d01e43d155b1eb29195.png",
+    "static/media/coin-tracker.png": "/my_portfolio/static/media/coin-tracker.dd127308431a5bb4a10e.png",
+    "static/media/bj02.png": "/my_portfolio/static/media/bj02.d2752cc864ece297e758.png",
+    "static/media/typing-game.png": "/my_portfolio/static/media/typing-game.e7d7cc92a30641f3bd1d.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.0a6b2267.css.map": "/my_portfolio/static/css/main.0a6b2267.css.map",
+    "main.04168618.js.map": "/my_portfolio/static/js/main.04168618.js.map",
+    "787.1ed0c42c.chunk.js.map": "/my_portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6199b3a.css",
-    "static/js/main.a7f28d70.js"
+    "static/css/main.0a6b2267.css",
+    "static/js/main.04168618.js"
   ]
 }
