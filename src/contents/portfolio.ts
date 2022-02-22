@@ -26,7 +26,7 @@ export const PORTFOLIO_CONTENTS = [
         description: "手持ちカードの数字の合計が「21」を超えない範囲で「21」に近づけた方が勝ち、というゲーム「BlackJack」を作りました。このプロジェクトでは、ゲームのStateをReducerで管理する方法を試してみました。必勝法である「カウンティング」ができるようにデッキの枚数は常に管理しているので、ぜひ試してみてください。",
         skills: "React, TypeScript, tailwindCSS, daisyUI, Sass, Deck_of_Card_API",
         github: "https://github.com/TaikiCode/blackJack",
-        demo: "",
+        demo: "https://taikicode.github.io/blackJack/",
     },
     {
         title: "SNS",
@@ -64,14 +64,14 @@ export const PORTFOLIO_CONTENTS = [
         github: "https://github.com/TaikiCode/react_gallery",
         demo: "https://taikicode.github.io/react_gallery/",
     },
-    {
-        title: "Portfolioサイト",
-        imageUrl: portfolio,
-        imageAltUrl: portfolio,
-        description: "Reactで作成した自分のポートフォリオサイトです。react-hook-formなどの便利な外部ライブラリをたくさん利用して作成しました。",
-        skills: "React, react-hook-form, react-scroll, react-typed, emailjs-com, tailwindCSS materialUI",
-        github: "https://github.com/TaikiCode/react_portfolio",
-        demo: "https://taikicode.github.io/react_portfolio/",
-    },
+    // {
+    //     title: "Portfolioサイト",
+    //     imageUrl: portfolio,
+    //     imageAltUrl: portfolio,
+    //     description: "Reactで作成した自分のポートフォリオサイトです。react-hook-formなどの便利な外部ライブラリをたくさん利用して作成しました。",
+    //     skills: "React, react-hook-form, react-scroll, react-typed, emailjs-com, tailwindCSS materialUI",
+    //     github: "https://github.com/TaikiCode/react_portfolio",
+    //     demo: "https://taikicode.github.io/react_portfolio/",
+    // },
 
 ]
