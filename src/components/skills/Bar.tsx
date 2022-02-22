@@ -9,7 +9,7 @@ interface Props {
 const Bar: VFC<Props> = ({title, level, barStyleName}) => {
   return (
     <>
-      <div className="flex justify-between items-center pb-1 font-mono text-sm">
+      <div className="flex justify-between items-center pb-2 font-mono text-sm">
         <p>{title}</p>
         <p>{level}</p>
       </div>

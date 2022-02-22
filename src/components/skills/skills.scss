@@ -17,34 +17,37 @@
   background: var(--primary-grey);
   position: relative;
   border-radius: 1rem;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+    border-radius: 1rem;
+  }
 }
 
-.line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: crimson;
-  border-radius: 1rem;
-}
-
-.htmlcss::before {
-  width: 80%;
-}
-
-.js::before {
-  width: 70%;
-}
-
-.react::before {
-  width: 75%;
-}
-
-.python::before {
+.ninety::before {
   width: 90%;
 }
 
-.django::before {
+.eighty::before {
   width: 80%;
+}
+
+.seventy_five::before {
+  width: 75%;
+}
+
+.seventy::before {
+  width: 70%;
+}
+
+.sixty::before {
+  width: 60%;
+}
+
+.forty::before {
+  width: 40%;
 }
